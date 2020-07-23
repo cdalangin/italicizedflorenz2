@@ -1,9 +1,16 @@
 @import
 url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
 
+
+p {
+    font-family: 'Merriweather';
+    font-weight: 400;
+}
+
+/* Landing */
 #landing {
-    background-color: #ccafaf;
-    width: 100vw;
+    background-color: #cfa8d5;
+    height: 100vh;
 }
 
 .name {
@@ -15,22 +22,77 @@ url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
     font-size: 30px;
     font-family: 'Merriweather';
     font-weight: 300;
-
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
-    -webkit-transform: translateX(-1000%);
-        -ms-transform: translateX(-1000%);
-            transform: translateX(-1000%);
-    letter-spacing: -1px;
 }
 
-.animate .subtitle {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-}
-
-#me {
+/* #me {
     position: relative;
+} */
+
+/* Second section */
+
+#info {
+    background-color: #d58dc8;
+    height: 100vh;
 }
 
+#laptop {
+    height: 30rem;
+    top: 80px;
+}
+
+#fol1, #fol2, #fol3 {
+    position: absolute;
+    height:7rem;
+    z-index: 1;
+    top:16rem;
+}
+
+#fol1 {
+    left:9rem;
+}
+
+#fol2 {
+    left:18.5rem;
+}
+
+#fol3 {
+    left:27.5rem;
+}
+
+#click-here {
+    left:8.5rem;
+    top:25rem;
+}
+
+.click {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#info1, #info2, #info3 {
+    position:absolute;
+    width:25rem;
+    text-align:left;
+    margin-left:10rem;
+    word-wrap:break-word;
+    padding:2rem;
+    left: 35rem;
+    top:13rem;
+}
+
+/* Animations */
+#info1 { visibility:hidden; opacity:0; }
+.show:focus + #info1 { visibility:visible; opacity:1; }
+
+#info2 { visibility:hidden; opacity:0; }
+.show:focus + #info2 { visibility:visible; opacity:1; }
+
+#info3 { visibility:hidden; opacity:0; }
+.show:focus + #info3 { visibility:visible; opacity:1; }
+
+
+/* Projects */
+#projects {
+    background-color: #b964aa;
+    height: 100vh;
+}
