@@ -25,3 +25,8 @@ function myOther() {
         x.style.visibility = "visible";
     }
 }
+
+
+function linkedinlink() {
+    window.location = "http://www.linkedin.com/in/cfdalangin/";
+};
