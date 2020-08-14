@@ -10,6 +10,7 @@
 
     <title>Cirill Florenz</title>
     <!-- Bootstrap -->
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -67,7 +68,7 @@
             <div class="row text-center align-items-center">
                 <div class="col-lg-4 col-sm-6">
                     <h1 class="name">Hi! I'm Cirill Florenz</h1>
-                    <span class="subtitle">I'm a CIS Student</span>
+                    <span class="subtitle" id="demo">I'm a CIS Student</span>
                 </div>
                 <div class="col-lg-8 col-sm-6">
                     <img src="./img/me.png" alt="me" class="align-items-center img-fluid">
@@ -126,62 +127,71 @@
         </div>
     </section> -->
 
-    <section id="info" class="container-fluid d-flex align-items-center p-3">
+    <section id="info" class="p-5">
         <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6  align-items-center">
-                    <img src="img/laptop.png" alt="laptop" id="laptop"
-                        class="align-items-center img-fluid position-relative">
-                    <a href="#show" class="show" style="text-decoration: none;">
-                        <img src="./img/schoolfol.png" id="fol1" alt="school" class="img-fluid">
-                    </a>
-                    <a href="#show" class="show" style="text-decoration: none;">
-                        <img src="./img/activitiesfol.png" id="fol2" alt="activities" class="img-fluid">
-                    </a>
-                    <a href="#show" class="show" style="text-decoration: none;">
-                        <img src="./img/funfactsfol.png" id="fol3" alt="other" class="img-fluid">
-                    </a>
-                </div>
-
+            <div class="container text-center">
+                <h1 class="text-light proj-title mb-2 display-3">ABOUT</h1>
+                <h3 class="text-light proj-title mb-3 display-5">Click on a folder!</h3>
+            </div>
+            <div class="row text-center mb-4">
                 <div class="col-sm-6">
-
-                    <div class="card bg-primary h-100">
-                        <div class="container bg-secondary align-items-center">
-                            <div class="card p-4 position-absolute" id="info1">
-                                <p>var college = "Baruch College";</p>
-                                <p>var graduation = "2023";</p>
-                                <p>var major = "Computer Information Systems";</p>
-                                <p>var minor = "Graphic Art"</p>
-                            </div>
-
-                            <div class="card p-4 position-absolute" id="info2">
-                                <p>CodeDay Intern</p>
-                                <p>Baruch Women In Business VP of Graphics and IT Committee</p>
-                                <p>Manager of the Ka Omie Youtube Channel</p>
-                                <p>Hackathon Enthusiast</p>
-                            </div>
-
-                            <div class="card p-4 position-absolute" id="info3">
-                                <p>var favorite_food = "Baruch College";</p>
-                                <p>var fave_tv_show = "Phineas and Ferb";</p>
-                                <p>var color = "purple";</p>
-                            </div>
+                    <a href="#demo1" data-toggle="collapse"><img src="./img/schoolfol.png" alt="school"
+                            class="folders"></a>
+                </div>
+                <div class="col-sm-6">
+                    <div id="demo1" class="collapse">
+                        <div class="card p-4">
+                            <p>var college = "Baruch College";</p>
+                            <p>var graduation = "2023";</p>
+                            <p>var major = "Computer Information Systems";</p>
+                            <p>var minor = "Graphic Art"</p>
                         </div>
                     </div>
-
                 </div>
+            </div>
 
+            <div class="row text-center mb-4">
+                <div class="col-sm-6">
+                    <a href="#demo2" data-toggle="collapse"><img src="./img/activitiesfol.png" alt="activities"
+                            class="folders"></a>
+                </div>
+                <div class="col-sm-6">
+                    <div id="demo2" class="collapse">
+                        <div class="card p-4">
+                            <p>CodeDay Intern</p>
+                            <p>Baruch Women In Business VP of Graphics and IT Committee</p>
+                            <p>Manager of the Ka Omie Youtube Channel</p>
+                            <p>Hackathon Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-6">
+                    <a href="#demo3" data-toggle="collapse"><img src="./img/funfactsfol.png" alt="fun facts"
+                            class="folders"></a>
+                </div>
+                <div class="col-sm-6">
+                    <div id="demo3" class="collapse">
+                        <div class="card p-4">
+                            <p>var favorite_food = "Pizza";</p>
+                            <p>var fave_tv_show = "Phineas and Ferb";</p>
+                            <p>var color = "purple";</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
 
     </section>
 
     <!-- Projects -->
 
     <section id="projects" class="container-fluid align-items-center p-5">
-        <div class="container text-center m-3">
-            <h1 class="text-dark proj-title">PROJECTS I DID</h1>
+        <div class="container text-center">
+            <h1 class="text-light proj-title my-5 display-3">PROJECTS</h1>
         </div>
 
         <div>
@@ -190,12 +200,16 @@
                     <img src="img/moveitcovid.jpg" class="card-img-top" alt="Move It Covid">
                     <div class="card-body">
                         <h4 class="card-title">Move-it COVID</h4>
-                        <p class="card-text">Description
+                        <p class="card-text">An endless runner game for kids to learn best practices to prevent the
+                            spread of COVID-19
+                            <br><br>Made during Freetail Hackers <a
+                                href="https://summerhacks.devpost.com/">SummerHacks</a> 2020
                         </p>
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-dark">GitHub Link</button>
-                        <button type="button" class="btn btn-outline-dark">Website</button>
+                        <a class="btn btn-outline-dark" role="button"
+                            href="https://github.com/shanicesmith98/prevention-game">GitHub Link</a>
+                        <a class="btn btn-outline-dark" role="button" href="#">Website</a>
                     </div>
                 </div>
                 <div class="card mx-2 mb-3 d-inline-block shadow-lg" style="max-width: 18rem;">
@@ -203,35 +217,56 @@
                     <div class="card-body artilleryTop">
                         <h4 class="card-title"><i class="fas fa-crown winner"> </i> ARTillery</h4>
                         <p class="card-text">Winner of the Best Arts and Crafts Hack of Techtogether's <a
-                                href="">HobbyHacks</a> Hackathon</p>
+                                href="https://hobbyhacks.devpost.com/">HobbyHacks</a> Hackathon<br><br>
+                            A cure for Artist Block that not only gives users a simple prompt to follow, but also gives
+                            them various options to draw inspiration from.</p>
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-dark">GitHub Link</button>
-                        <button type="button" class="btn btn-outline-dark">Website</button>
+                        <a class="btn btn-outline-dark" role="button" href="#">GitHub Link</a>
+                        <a class="btn btn-outline-dark" role="button" href="#">Website</a>
                     </div>
                 </div>
                 <div class="card mx-2 mb-3 d-inline-block shadow-lg" style="max-width: 18rem;">
                     <img src="img/spyfall.jpg" class="card-img-top" alt="Spyfall 2.0">
                     <div class="card-body">
                         <h4 class="card-title">Spyfall 2.0</h4>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">A web game based on the classic card game Spyfall, and based on every
+                            other Spyfall web game ever made, but better.
+                            <br><br>Made during <a href="https://labs.codeday.org/">Codelabs</a> 2020</p>
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-dark">GitHub Link</button>
-                        <button type="button" class="btn btn-outline-dark">Website</button>
+                        <a class="btn btn-outline-dark" role="button" href="#">GitHub Link</a>
+                        <a class="btn btn-outline-dark" role="button" href="#">Website</a>
                     </div>
                 </div>
                 <div class="card mx-2 mb-3 d-inline-block shadow-lg" style="max-width: 18rem;">
                     <img src="img/mywebsite.jpg" class="card-img-top" alt="Personal Website">
                     <div class="card-body">
                         <h4 class="card-title">This website!!</h4>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">My personal portfolio all about me! It not only showcases my work so far,
+                            but also helps me practice front end stuff.</p>
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-dark">GitHub Link</button>
-                        <button type="button" class="btn btn-outline-dark">Website</button>
+                        <a class="btn btn-outline-dark" role="button" href="#">GitHub Link</a>
+                        <a class="btn btn-outline-dark" role="button" href="#">Website</a>
                     </div>
                 </div>
+                <div class="card mx-2 mb-3 d-inline-block shadow-lg" style="max-width: 18rem;">
+                    <img src="img/logojpg.jpg" class="card-img-top" alt="ARTillery">
+                    <div class="card-body artilleryTop">
+                        <h4 class="card-title">Ka Omie Youtube Channel</h4>
+                        <p class="card-text">Direct and edit videos and ma<a
+                                href="https://hobbyhacks.devpost.com/">HobbyHacks</a> Hackathon<br><br>
+                            A cure for Artist Block that not only gives users a simple prompt to follow, but also gives
+                            them various options to draw inspiration from.</p>
+                    </div>
+                    <div class="card-body">
+                        <a class="btn btn-outline-dark" role="button"
+                            href="https://www.youtube.com/channel/UCuaCPXIJEzMq3q8i_nd3tyw">Youtube Channel</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
