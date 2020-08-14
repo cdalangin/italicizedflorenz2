@@ -36,8 +36,8 @@ p {
 
 
 .folders {
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
 }
 
 #click-here {
@@ -73,9 +73,6 @@ p {
     color: gold;
 }
 
-#art {
-    background-color: paleturquoise;
-}
 
 /* Art */
 .artwork {
