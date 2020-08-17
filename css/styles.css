@@ -36,8 +36,8 @@ p {
 
 
 .folders {
-    height: 10rem;
-    width: 10rem;
+    height: 9rem;
+    width: 9rem;
 }
 
 #click-here {
@@ -116,4 +116,13 @@ p {
   .fab:hover {
     opacity: 0.7;
     text-decoration: none;
+}
+
+.carPic {
+    height: auto;
+    max-width: 70%;
+}
+
+.caption {
+    background-color: #f7f7f798;
 }
