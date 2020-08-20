@@ -14,6 +14,12 @@ p {
     font-weight: 400;
 }
 
+a {
+    color: #cc99ff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
 /* Landing */
 #landing {
     /* background-color: #cfa8d5; */
@@ -32,8 +38,6 @@ p {
 }
 
 /* Second section */
-
-
 
 .folders {
     height: 9rem;
@@ -124,5 +128,22 @@ p {
 }
 
 .caption {
-    background-color: #f7f7f798;
+    background-color: #f7f7f7ce;
+}
+
+/* Contact */
+
+#contact {
+    background-image: url('http://u.cubeupload.com/cdalangin/buildingsblur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.contact-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
 }
